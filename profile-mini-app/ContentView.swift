@@ -14,7 +14,8 @@ struct ContentView: View {
                 .resizable()
                 .ignoresSafeArea()
             VStack{
-                Image("myImage")
+                Image("candeel")
+                    .resizable()
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .shadow(color: .pink, radius: 5, x: 5, y: 5 )
                 Text("Pranav Mathur")
