@@ -15,13 +15,17 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack{
                 Image("candeel")
-                    .resizable()
+                    .resizable()  // Take up available screen space
+                    .frame(width: 200, height: 200)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .shadow(color: .pink, radius: 5, x: 5, y: 5 )
                 Text("Pranav Mathur")
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .font(.largeTitle)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundStyle(.white)
                 Text("iOS | Front End Developer")
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundStyle(.white)
                 HStack{}
                 Button("Follow") {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
@@ -48,7 +52,7 @@ struct ContentView: View {
                 }
                 Text("About You")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                Text("lorem ipsum and some random text, repeatedly.. Lorem ipsum and some random text, repeatedly.. Lorem ipsum and some random text, repeatedly..")
+                Text("I'm an iOS Frontend Developer. Welcome to the series of iOS-17 projects. Let's dive deeper and create some more exciting projects.")
             }
         }
     }
