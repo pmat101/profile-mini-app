@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         ZStack{
             Image("background")
                 .resizable()
                 .ignoresSafeArea()
+            
             VStack{
                 Image("candeel")
                     .resizable()  // Take up available screen space
@@ -54,7 +56,9 @@ struct ContentView: View {
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Text("I'm an iOS Frontend Developer. Welcome to the series of iOS-17 projects. Let's dive deeper and create some more exciting projects.")
             }
+            
         }
+        
     }
 }
 
